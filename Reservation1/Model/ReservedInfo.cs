@@ -27,6 +27,11 @@ namespace Reservation1.Model
             get;
             set;
         }
+        public int NumberGuests
+        {
+            get;
+            set;
+        }
         public string Comment
         {
             get;

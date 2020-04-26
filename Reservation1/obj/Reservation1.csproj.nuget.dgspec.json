@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProjectHome\\Reservation1\\Reservation1\\Reservation1.csproj": {}
+    "E:\\ProjectHome\\ReservationTabsService\\Reservation1\\Reservation1.csproj": {}
   },
   "projects": {
-    "E:\\ProjectHome\\Reservation1\\Reservation1\\Reservation1.csproj": {
+    "E:\\ProjectHome\\ReservationTabsService\\Reservation1\\Reservation1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectHome\\Reservation1\\Reservation1\\Reservation1.csproj",
+        "projectUniqueName": "E:\\ProjectHome\\ReservationTabsService\\Reservation1\\Reservation1.csproj",
         "projectName": "Reservation1",
-        "projectPath": "E:\\ProjectHome\\Reservation1\\Reservation1\\Reservation1.csproj",
+        "projectPath": "E:\\ProjectHome\\ReservationTabsService\\Reservation1\\Reservation1.csproj",
         "packagesPath": "C:\\Users\\Stas\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectHome\\Reservation1\\Reservation1\\obj\\",
+        "outputPath": "E:\\ProjectHome\\ReservationTabsService\\Reservation1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\"

@@ -16,6 +16,7 @@ namespace Reservation1
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +27,18 @@ namespace Reservation1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost",
+                                                          "https://localhost")
+                                                          .AllowAnyHeader()
+                                                          .AllowAnyMethod();
+                                  });
+            });
+
             services.AddControllers();
             var appDataReservedTablesListJson = "AppData/reservedTablesList.json";
             services.AddSingleton(new FileLoader(appDataReservedTablesListJson));
@@ -46,6 +59,8 @@ namespace Reservation1
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 
